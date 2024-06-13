@@ -1,0 +1,74 @@
+.message-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+
+}
+
+.message-bubble{
+    width: 95%;
+    height: fit-content;
+    display: flex;
+    margin: 2.5% 2.5% 0 2.5%;
+    background-color: var(--primary);
+    border-radius: 1.5em;
+    -webkit-filter: drop-shadow(0 0 0.3rem rgba(0,0,0,.4));
+}
+
+.message-internal-container{
+    width: 100%;
+    height: fit-content;
+    padding: 1em;
+}
+
+.message-title h3{
+    margin: 0;
+    font-family: 'GeneralSansSemibold', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.message-contents h3{
+    margin: .25em;
+    font-family: 'GeneralSansMedium', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.timestamp{
+    font-family: 'GeneralSansExtralight', Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    width: calc(100%-1em);
+    margin: .5em .5em .5em 1em;
+}
+
+.timestamp h4{
+    margin: 0;
+    font-size: 80%;
+    text-align: right;
+}
+
+.message-quote{
+    height: fit-content;
+    width: 100%;
+}
+
+.message-quote svg{
+    width: 5%;
+    float: right;
+    margin-right: 7%;
+}
+
+.response-bubble{
+    width: 100%;
+    height: fit-content;
+    background-color: var(--light);
+    border-radius: 1em;
+    margin-top: 1em;
+}
+
+.response-bubble h3{
+    font-family: 'GeneralSansMedium', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: .5em;
+}

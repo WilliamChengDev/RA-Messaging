@@ -1,0 +1,65 @@
+.home-page-background{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--light);
+    display: none; /*originally flex*/
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title-container{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    background-color: var(--important);
+    border-radius: 2em;
+    margin-top: 1em;
+    width: 95%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-lines-container{
+    width: 90%;
+    height: fit-content;
+}
+
+.title h1{
+    font-family: 'GeneralSansSemibold', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 7vh;
+    user-select: none;
+    margin: 0;
+}
+
+.title-quote-container{
+    width: 95%;
+    height: 10%;
+}
+
+.title-quote-container svg{
+    aspect-ratio: 97/65;
+    height: 100%;
+    float: right;
+    margin-right: 2em;
+}
+
+.title-image-container{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.smiley-container{
+    width: 30vh;
+    margin-bottom: 5em;
+}

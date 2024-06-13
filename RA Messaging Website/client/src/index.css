@@ -1,0 +1,27 @@
+:root {
+  --dark: #080A19;
+  --light: #FFE6E6;
+  --important: #FF9A99;
+  --primary: #51E07D;
+  --primary-2: #32B26F;
+}
+
+body{
+ margin: 0;  
+ overscroll-behavior-y: none;
+}
+
+@font-face {
+  font-family: GeneralSansMedium;
+  src: url(./fonts/GeneralSans-Medium.woff2);
+}
+
+@font-face {
+  font-family: GeneralSansSemiBold;
+  src: url(./fonts/GeneralSans-Semibold.woff2);
+}
+
+@font-face {
+  font-family: GeneralSansExtralight;
+  src: url(./fonts/GeneralSansExtralight.woff2);
+}
