@@ -25,10 +25,6 @@ function Feed() {
     fetchPosts();
   }, [])
 
-  useEffect(() => { //log post to console on update (dev purposes)
-    console.log(posts);
-  }, [posts])
-
   const fetchPosts = () => { //tool used to fetch/refresh posts, can be passed to children
     fetch('/posts').then(
       response => response.json()
@@ -39,7 +35,6 @@ function Feed() {
       }
     )
   }
-
 
   return (
     <div className='feed-background'>

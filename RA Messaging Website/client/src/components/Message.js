@@ -1,8 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Message.css'
 import Quote from '../svgs/quote'
 
 function Message({post}) {
+  const [user, setUser] = useState([{}]);
+
+  useEffect(() => { //testing
+    if(typeof post.userid !== 'undefined'){
+      console.log("fetching user with id " + post.userid);
+      fetch(`/getuserbyid?userid=${post.userid}`).then(
+        response => response.json()
+      ).then(
+        data => {
+          setUser(data);
+          console.log(post.userid + " is " + data.username)
+        }
+      )
+    }
+  }, []);
 
   return (
     <div className='message-container'>
@@ -12,7 +27,7 @@ function Message({post}) {
             {(post.userid === 2) ? (
               <h3>Anonymous Resident</h3>
             ):(
-              <h3>{post.userid}</h3>
+              <h3>{user.username}</h3>
             )}
           </div>
           <div className='message-contents'>

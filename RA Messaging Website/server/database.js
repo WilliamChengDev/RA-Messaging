@@ -52,14 +52,14 @@ export async function signUp(username, email, birthday, password){
     return result;
 }
 
-export async function getUsernameById(userid){
-    const username = await pool.query(`
+export async function getUserById(userid){
+    const user = await pool.query(`
         SELECT *
         FROM User
         WHERE userid = ?
     `, [userid]);
-    return username;
+    return user[0][0];
 }
 
-// const post = await getUsernameById(1);
-// console.log(post);
+// const post = await getUserById(1);
+// console.log(post.username);
