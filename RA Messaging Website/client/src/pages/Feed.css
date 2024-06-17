@@ -1,9 +1,10 @@
 .feed-background{
-    background-color: var(--light);
+    background-color: var(--primary);
     width: 100vw;
     height: 100vh;
     display: flex; /* originally flex*/
     flex-direction: column;
+    position: fixed;
 }
 
 .top-row{
@@ -17,14 +18,13 @@
 .top-row-bar{
     width: 30%;
     height: 1vh;
-    background-color: var(--primary);
+    background-color: var(--important);
     border-radius: 1em;
 }
 
 .feed-container{
-    height: 85vh;
+    height: 95vh;
     width: 100%;
-    /* background-color: red; */
     overflow: scroll;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
@@ -38,6 +38,9 @@
 .feed{
     height: fit-content;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .feed-loading{
@@ -55,21 +58,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    pointer-events: none;
 }
 
 .new-message-button{
     height: 4vh;
     aspect-ratio: 4/.75;
-    background-color: var(--primary);
+    background-color: rgba(255, 154, 153, .5);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border-radius: 4em;
     display: flex;
     justify-content: center;
     align-items: center;
     transition-duration: .3s;
+    pointer-events: all;
 }
 
 .new-message-button:hover{
-    background-color: var(--primary-2);
+    background-color: var(--important);
 
 }
 

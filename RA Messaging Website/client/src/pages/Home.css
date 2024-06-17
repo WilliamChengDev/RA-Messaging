@@ -2,9 +2,11 @@
     width: 100vw;
     height: 100vh;
     background-color: var(--light);
-    display: none; /*originally flex*/
+    display: flex; /*originally flex*/
     flex-direction: column;
     justify-content: space-between;
+    position: fixed;
+    z-index: 1;
 }
 
 .title-container{
@@ -49,6 +51,7 @@
     height: 100%;
     float: right;
     margin-right: 2em;
+    fill: var(--important);
 }
 
 .title-image-container{
@@ -62,4 +65,5 @@
 .smiley-container{
     width: 30vh;
     margin-bottom: 5em;
+    position: absolute;
 }

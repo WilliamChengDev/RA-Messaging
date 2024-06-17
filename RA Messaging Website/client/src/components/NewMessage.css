@@ -13,7 +13,7 @@
         z-index: 4;
         width: 90%;
         height: fit-content;
-        background-color: var(--primary);
+        background-color: var(--important);
         border-radius: 1em;
         -webkit-filter: drop-shadow(0 0 0.3rem rgba(0,0,0,.4));
 }
@@ -22,7 +22,6 @@
         width: 90%;
         height: fit-content;
         margin: 5%;
-
 }
 
 .new-message-internals h3{
